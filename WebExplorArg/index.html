@@ -9,7 +9,7 @@
 <div>
 <!-- */Links principales -->
 <nav class="topnav">
-  <button class="boton">  <a href="###" class="boton">Inicio</a></button>
+  <button class="boton">  <a href="index.html" class="boton">Inicio</a></button>
   <button class="boton">  <a href="###" class="boton">Formulario</a></button>
   <button class="boton">  <a href="###" class="boton">Contacto</a></button>
 
@@ -45,13 +45,12 @@ Bienvenidos a la Argentina
 <div>
 <hr>
 <h2>Regiones</h2>
-<h4>Viaja con nosotros</h4>
 
 <!-- Seleccion de regiones-->
-<div id="regiones"> 
-  <label for="Regiones">Selecciona:
+<nav id="regiones"> 
+  <button class="boton" for="Regiones">Viaja con nosotros:
       <select name="Regiones" id="Region">
-          <option value="NOA">Noroeste argentino (NOA)</option>
+          <option value="NOA">Noroeste argentino (NOA)<a href="RegionNOA.html"></a></option>
           <option value="NEA">Nordeste argentino (NEA)</option>
           <option value="AMBA">Región AMBA </option>
           <option value="PBA">Región Buenos Aires</option>
@@ -59,7 +58,7 @@ Bienvenidos a la Argentina
           <option value="Cuyo">Región Cuyo</option>
           <option value="Patagonia">Región Patagonia </option>
       </select>
-</label></div>
+    </nav></button>
 <hr>
 <div class="responsive">
   <div class="gallery">
@@ -109,6 +108,9 @@ Bienvenidos a la Argentina
   </p>
 </div>
 </section>
+
+<!-- INCLUIR VIDEOS, MUSICA -->
+
 </body>
 <hr>
 <footer> Femme Coders- Derechos Reservados</footer>

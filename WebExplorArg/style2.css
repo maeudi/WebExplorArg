@@ -1,0 +1,127 @@
+div {
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.boton{
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+    text-align:center;
+    text-decoration: none;
+    font-family: 'Lucida Sans';
+    display:inline-block;
+    color: #FFF;
+    background: rgb(16, 139, 192);
+    white-space: nowrap;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 30px;
+    margin: 5px 5px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+
+body{
+  background: linear-gradient(90deg, rgb(115, 252, 244) 0%, rgb(139, 102, 241) 100%);;
+  background-size: cover;
+  width:100%;
+  padding-top: 10%;
+  padding-left: 0%;
+}
+
+#region,h4{
+  font-family: 'Lucida Sans';
+}
+#regiones.label{
+    background-clip: border-box;
+    font: 14px;
+    font-family: 'Lucida Sans';
+    margin: 3px;
+    border: 50px outset 7cap;
+    width: 200px;
+    padding: 10px;
+}
+
+#titulo{
+  border: 6px outset #1e3996;
+  width: 80%;
+  border-radius: 10px;
+  height: 110px;
+  padding-top: 20px;
+  background: #1C6EA4;
+  background: -moz-linear-gradient(left, #1C6EA4 0%, #2388CB 50%, #144E75 100%);
+  background: -webkit-linear-gradient(left, #1C6EA4 0%, #2388CB 50%, #144E75 100%);
+  background: linear-gradient(to right, #1C6EA4 0%, #2388CB 50%, #144E75 100%);
+  text-align: center;
+  text-size-adjust: 50%;
+  text-shadow: 5px 5px 10px rgba(229, 16, 245, 0.4);
+  color: #e510f5;
+    font-size:350%;
+    font-family:'Caveat';
+    margin-left: 80px;
+    overflow: hidden;
+   
+}
+h4{
+  font-family: 'Lucida Sans';
+   margin-left: 40px;
+   text-align: left;
+}
+#bienvenida{
+    text-align-last: center;
+    word-spacing: 10px;
+    font-family: 'Lucida Sans';
+}
+div.gallery {
+  border: 2px solid #ccc;
+  margin-right: 10px;
+  width: 18%;
+  float: left;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+  margin-bottom: 5px;
+}
+
+div.gallery img {
+  width: 90%;
+  height: 50%;
+  padding: 5px;
+  object-fit: cover;
+  text-align: center;
+}
+
+div.desc {
+  padding: 5px;
+  font-family: 'Lucida Sans';
+  text-align: left;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
