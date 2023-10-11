@@ -3,6 +3,8 @@ div {
   padding-left: 10px;
   margin-left: 10px;
   margin-right: 10px;
+  font-family: "Lucida Sans";
+  text-align:justify;
 }
 
 .boton{
@@ -16,9 +18,9 @@ div {
     white-space: nowrap;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
-    border-radius: 30px;
+    border-radius: 60px;
     margin: 5px 5px;
-    -webkit-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
@@ -48,21 +50,21 @@ body{
 
 #titulo{
   border: 6px outset #1e3996;
-  width: 80%;
-  border-radius: 10px;
-  height: 110px;
-  padding-top: 20px;
+  width: 70%;
+  border-radius: 60px;
+  height: 90px;
+  padding-top: 10px;
   background: #1C6EA4;
   background: -moz-linear-gradient(left, #1C6EA4 0%, #2388CB 50%, #144E75 100%);
   background: -webkit-linear-gradient(left, #1C6EA4 0%, #2388CB 50%, #144E75 100%);
   background: linear-gradient(to right, #1C6EA4 0%, #2388CB 50%, #144E75 100%);
   text-align: center;
-  text-size-adjust: 50%;
+  text-size-adjust: 100%;
   text-shadow: 5px 5px 10px rgba(229, 16, 245, 0.4);
   color: #e510f5;
     font-size:350%;
     font-family:'Caveat';
-    margin-left: 80px;
+    margin-left: 15%;
     overflow: hidden;
    
 }
@@ -71,9 +73,12 @@ h4{
    margin-left: 30px;
 }
 #bienvenida{
-    text-align-last: center;
+    text-align:justify;
     word-spacing: 10px;
-    font-family: 'Lucida Sans';
+    font-family: 'Lucida Handwriting';
+    line-height: 2;
+    margin-right: 10%;
+    margin-left: 10%;
 }
 div.gallery {
   border: 2px solid #ccc;
@@ -130,4 +135,9 @@ div.desc {
   'wght' 400,
   'GRAD' 0,
   'opsz' 24
+}
+.footer {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 10px;
 }
