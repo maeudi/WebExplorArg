@@ -3,15 +3,14 @@
 <head>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <script src="script.js"></script>
-
 </head>
 <div>
+
 <!-- */Links principales -->
 <nav class="topnav">
-  <button class="boton">  <a href="###" class="boton">Inicio</a></button>
-  <button class="boton">  <a href="###" class="boton">Formulario</a></button>
+  <button class="boton">  <a href="./index.html" class="boton">Inicio</a></button>
+  <button class="boton">  <a href="#regiones_titulo" class="boton">Regiones</a></button>
   <button class="boton">  <a href="###" class="boton">Contacto</a></button>
 
 </nav>
@@ -22,13 +21,14 @@
 <header>
 <h1 id="titulo">Explora Argentina </h1>
 <h4 id="subtitulo">Descubre nuevos destinos</h4></sub>
+<img id="turista" src="iconos/tourist.png">
 </header>
 </div>
 <!-- Mensaje de bienvenida -->
 </div>
 <body>
   <div>
-<blockquote id="bienvenida">
+<p id="bienvenida">
     "El asado, el fútbol, el tango, el mate, el Malbec, el dulce de leche, el choripán, el Obelisco. Somos eso, pero también somos mucho más que eso.  El café de la esquina, el tiempo innegociable para un encuentro con amigos, los domingos en familia, la avenida que no duerme, las noches de rock.
 <br>
     Las pampas infinitas, los gauchos, los festivales en los pueblos, el folclore.  La Patagonia remota y misteriosa y el norte rebosante de sol y de colores. La selva, el desierto, la cumbre más alta de América y el Fin del Mundo. Todas las personalidades y caracteres que pueden anidar en esos paisajes, en esos climas.
@@ -40,28 +40,28 @@ En nuestra esencia está la de ser un país de puertas abiertas, que cobijó a m
 <br>
 Bienvenidos a la Argentina
 
-</blockquote>
+</p>
 <a href="https://www.argentina.travel/sobre-argentina">Argentina Travel</a>
 </div>
+
 <div>
 <hr>
-<h2>Regiones</h2>
+<h2 id="regiones_titulo">Regiones </h2>
 <h4>Viaja con nosotros</h4>
 
 <!-- Seleccion de regiones-->
-<nav id="regiones"> 
-  <button class="boton" for="Regiones">Viaja con nosotros:
+<div id="regiones"> 
+  <label for="Regiones">Selecciona:
       <select name="Regiones" id="Region">
-          <option value="NOA">Noroeste argentino (NOA)<a href="RegionNOA.html" target="_blank"></a></option>
-          <option value="NEA">Nordeste argentino (NEA)<a href="RegionNEA.html" target="_blank"></a></option>
+          <option value="NOA">Noroeste argentino (NOA)</option>
+          <option value="NEA">Nordeste argentino (NEA)</option>
           <option value="AMBA">Región AMBA </option>
           <option value="PBA">Región Buenos Aires</option>
           <option value="Centro">Región Centro </option>
-          <option value="Cuyo">Región Cuyo <a href="RegionCuyo.html"></a></option>
+          <option value="Cuyo">Región Cuyo</option>
           <option value="Patagonia">Región Patagonia </option>
       </select>
 </label></div>
-<hr>
 <div class="responsive">
   <div class="gallery">
   <img src="fotos turisticas/tucuman.jpg" alt="N0A" width="600" height="400">
@@ -110,9 +110,22 @@ Bienvenidos a la Argentina
   </p>
 </div>
 
-
 <!-- INCLUIR VIDEOS, MUSICA -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tU9rjTRcAao?si=1PKDQcHAND5ElSTD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </body>
 <hr>
-<footer> Femme Coders- Derechos Reservados</footer>
+<footer> Femme Coders- Derechos Reservados
+
+<!-- Ajustar iconos de redes sociales -->
+  <div class ="iconos">
+    <img src="iconos/facebook.png">
+    <img src="iconos/instagram.png">
+    <img src="iconos/whatsapp.png">
+    <img src="iconos/twitter.png">
+    <img src="iconos/tiktok.png"></div>
+  <br>
+
+<a href="https://www.flaticon.com/free-stickers/travel" title="travel stickers">Travel stickers created by Stickers - Flaticon</a>
+</footer>
+</section>
 </html>
