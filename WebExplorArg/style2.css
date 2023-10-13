@@ -5,9 +5,15 @@ div {
   margin-right: 10px;
 }
 
+.topnav {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .boton{
     text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-    text-align:center;
+    text-align: center;
     text-decoration: none;
     font-family: 'Lucida Sans';
     display:inline-block;
@@ -26,74 +32,83 @@ div {
   }
 
 body{
-  background: linear-gradient(90deg, rgb(115, 252, 244) 0%, rgb(139, 102, 241) 100%);;
+  background: linear-gradient(90deg, rgb(86, 192, 185) 0%, rgb(92, 98, 180) 100%);;
   background-size: cover;
   width:100%;
   padding-top: 10%;
   padding-left: 0%;
 }
-
-#region,h4{
+#turista{
+  width: 10%;
+  margin-left: 20%;
+}
+#region{
   font-family: 'Lucida Sans';
+  text-align: center;
 }
 #regiones.label{
     background-clip: border-box;
-    font: 14px;
+    font: 18px;
     font-family: 'Lucida Sans';
-    margin: 3px;
+    margin: 5px;
     border: 50px outset 7cap;
     width: 200px;
     padding: 10px;
+    padding-bottom: 5px;
 }
 
 #titulo{
   border: 6px outset #1e3996;
-  width: 80%;
-  border-radius: 10px;
-  height: 110px;
-  padding-top: 20px;
   background: #1C6EA4;
   background: -moz-linear-gradient(left, #1C6EA4 0%, #2388CB 50%, #144E75 100%);
   background: -webkit-linear-gradient(left, #1C6EA4 0%, #2388CB 50%, #144E75 100%);
   background: linear-gradient(to right, #1C6EA4 0%, #2388CB 50%, #144E75 100%);
   text-align: center;
-  text-size-adjust: 50%;
-  text-shadow: 5px 5px 10px rgba(229, 16, 245, 0.4);
-  color: #e510f5;
-    font-size:350%;
-    font-family:'Caveat';
-    margin-left: 80px;
-    overflow: hidden;
-   
+  text-shadow: 5px 5px 10px rgb(63, 69, 156);
+  color: #ffffff; 
+  font-family:'Caveat';
+  overflow: hidden; 
 }
+
 h4{
+   color: #FFF;
+   text-align: center;
+   font-family: 'Lucida Sans';
+}
+
+h2 {
+  color: #fff;
   font-family: 'Lucida Sans';
-  text-align: center;
+  text-align: justify;
 }
 #bienvenida{
-    text-align-last: center;
-    word-spacing: 10px;
-    font-family: 'Lucida Sans';
+    text-align: justify;
+    font-family: 'Lucida Handwriting';
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 2;
 }
 div.gallery {
   border: 2px solid #ccc;
-  margin-right: 10px;
+  padding-top: 2px;
+  margin-right: 2px;
   width: 18%;
   float: left;
+  align-content: justify;
 }
 
 div.gallery:hover {
-  border: 5px solid #777;
+  border: 1px solid #777;
   margin-bottom: 5px;
+  align-content: justify;
 }
 
 div.gallery img {
-  width: 90%;
+  width: 70%;
   height: 50%;
-  margin-top: 10px;
-  padding: 10px;
+  margin-left: 20px;
   object-fit: cover;
-  text-align: left;
+  text-align: center;
 }
 
 div.desc {
@@ -101,27 +116,107 @@ div.desc {
   font-family: 'Lucida Sans';
   text-align: center;
 }
-
+iframe{
+  margin: auto;
+  display: block;
+}
 * {
   box-sizing: border-box;
 }
 
 
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
+@media only screen and (max-width: 600px) {
+  h1 {
+      font-size: 70px;
   }
+  h2 {
+      font-size: 55px;
+  }
+  h4 {
+    font-size: 45px;
+  }
+.boton , footer{
+  font-size: 30px;
+}
+body {
+  font-size: 35px
+}
 }
 
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
+@media only screen and (min-width: 600px) {
+  h1 {
+      font-size: 65px;
   }
+  h2 {
+      font-size: 50px;
+  }
+  h4 {
+    font-size: 40px;
+  }
+.boton , footer{
+  font-size: 20px;
 }
+body {
+  font-size: 30px
+}
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+      font-size: 60px;
+  }
+  h2 {
+      font-size: 45px;
+  }
+  h4 {
+    font-size: 35px;
+  }
+.boton , footer{
+  font-size: 15px;
+}
+body {
+  font-size: 25px
+}
+}
+
+@media only screen and (min-width: 992px) {
+  h1 {
+      font-size: 55px;
+  }
+  h2 {
+      font-size: 40px;
+  }
+  h4 {
+    font-size: 30px;
+  }
+.boton , footer{
+  font-size: 10px;
+}
+body {
+  font-size: 20px
+}
+}
+
+img{
+  transition: transform .2s;
+  }
+
+  img:hover{
+  transform: scale(1.5);
+  }
 
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
+}
+
+footer {
+  background: rgb(16, 139, 192);
+  color: #FFF;
+}
+#iconos
+{
+  height: 10%;
+  width: 10%;
 }

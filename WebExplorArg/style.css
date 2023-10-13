@@ -47,12 +47,13 @@ body{
 }
 #regiones.label{
     background-clip: border-box;
-    font: 14px;
+    font: 18px;
     font-family: 'Lucida Sans';
-    margin: 3px;
+    margin: 5px;
     border: 50px outset 7cap;
     width: 200px;
     padding: 10px;
+    padding-bottom: 5px;
 }
 
 #titulo{
@@ -88,6 +89,7 @@ h2 {
 }
 div.gallery {
   border: 2px solid #ccc;
+  padding-top: 10px;
   margin-right: 40px;
   width: 20%;
   float: left;
@@ -131,7 +133,7 @@ div.desc {
     font-size: 45px;
   }
 .boton , footer{
-  font-size: 25px;
+  font-size: 30px;
 }
 body {
   font-size: 35px
