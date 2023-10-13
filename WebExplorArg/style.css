@@ -194,11 +194,11 @@ body {
 }
 }
 
-img{
+.regiones_img{
   transition: transform .2s;
   }
 
-  img:hover{
+ .regiones_img:hover{
   transform: scale(1.5);
   }
 
