@@ -87,56 +87,70 @@ h2 {
     margin-right: 10%;
     line-height: 2;
 }
-div.gallery {
-  border: 2px solid #ccc;
-  padding-top: 10px;
-  margin-right: 40px;
-  width: 20%;
-  float: left;
-}
 
 div.gallery:hover {
   border: 1px solid #777;
   margin-bottom: 5px;
 }
 iframe{
-  margin: auto;
-  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
+.iframe_container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
 div.gallery img {
   width: 90%;
-  height: 70%;
-  padding: 10px;
+  height: 90%;
+ padding: 15px;
   object-fit: cover;
   text-align: center;
 }
 
 div.desc {
-  padding: 2px;
   font-family: 'Lucida Sans';
   text-align: center;
+  box-sizing: content-box;
+  justify-content: center;
+  align-content: center;
+  word-wrap: break-word;
 }
-
-* {
-  box-sizing: border-box;
-}
-
 
 @media only screen and (max-width: 600px) {
   h1 {
-      font-size: 70px;
+      font-size: 60px;
   }
   h2 {
-      font-size: 55px;
+      font-size: 50px;
   }
   h4 {
-    font-size: 45px;
+    font-size: 40px;
+  }
+  div.desc a, p{
+    font-size: 25px;
   }
 .boton , footer{
   font-size: 30px;
 }
-body {
+body , a {
   font-size: 35px
+}
+div.gallery {
+  border: 2px solid #ccc;
+  float: left;
+  flex: wrap;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
 }
 }
 
@@ -145,16 +159,28 @@ body {
       font-size: 65px;
   }
   h2 {
-      font-size: 50px;
+      font-size: 45px;
   }
   h4 {
-    font-size: 40px;
+    font-size: 35px;
   }
-.boton , footer{
-  font-size: 20px;
+  div.desc a, p{
+    font-size: 20px;
+  }
+.boton , footer {
+  font-size: 25px;
 }
-body {
+body , a{
   font-size: 30px
+}
+div.gallery {
+  border: 5px solid #ccc;
+  float: left;
+  flex: wrap;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 25px;
 }
 }
 
@@ -163,16 +189,28 @@ body {
       font-size: 60px;
   }
   h2 {
-      font-size: 45px;
+      font-size: 40px;
   }
   h4 {
-    font-size: 35px;
+    font-size: 30px;
+  }
+  div.desc a, p{
+    font-size: 20px;
   }
 .boton , footer{
-  font-size: 15px;
+  font-size: 20px;
 }
-body {
+body , a {
   font-size: 25px
+}
+div.gallery {
+  border: 7px solid #ccc;
+  float: left;
+  flex: wrap;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
 }
 }
 
@@ -181,16 +219,28 @@ body {
       font-size: 55px;
   }
   h2 {
-      font-size: 40px;
+      font-size: 35px;
   }
   h4 {
-    font-size: 30px;
+    font-size: 25px;
   }
-.boton , footer{
-  font-size: 10px;
+  div.desc a, p{
+    font-size: 20px;
+  }
+.boton , footer {
+  font-size: 15px;
 }
 body {
   font-size: 20px
+}
+div.gallery {
+  border: 10px solid #ccc;
+  float: left;
+  flex: wrap;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
 }
 }
 

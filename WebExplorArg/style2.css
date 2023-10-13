@@ -42,9 +42,8 @@ body{
   width: 10%;
   margin-left: 20%;
 }
-#region{
+#region,h4{
   font-family: 'Lucida Sans';
-  text-align: center;
 }
 #regiones.label{
     background-clip: border-box;
@@ -70,16 +69,10 @@ body{
   overflow: hidden; 
 }
 
-h4{
-   color: #FFF;
-   text-align: center;
-   font-family: 'Lucida Sans';
-}
-
 h2 {
   color: #fff;
   font-family: 'Lucida Sans';
-  text-align: justify;
+  text-align: center;
 }
 #bienvenida{
     text-align: justify;
@@ -88,58 +81,78 @@ h2 {
     margin-right: 10%;
     line-height: 2;
 }
-div.gallery {
-  border: 2px solid #ccc;
-  padding-top: 2px;
-  margin-right: 2px;
-  width: 18%;
-  float: left;
-  align-content: justify;
-}
 
 div.gallery:hover {
   border: 1px solid #777;
   margin-bottom: 5px;
-  align-content: justify;
+}
+iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.iframe_container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
 }
 
 div.gallery img {
-  width: 70%;
-  height: 50%;
-  margin-left: 20px;
+  width: 90%;
+  height: 90%;
+ padding: 15px;
   object-fit: cover;
   text-align: center;
 }
-
-div.desc {
-  padding: 5px;
-  font-family: 'Lucida Sans';
+ h4{
+  color: #FFF;
   text-align: center;
 }
-iframe{
-  margin: auto;
-  display: block;
-}
-* {
-  box-sizing: border-box;
+div.desc h4, a, p {
+  font-family: 'Lucida Sans';
+  text-align: center;
+  box-sizing: content-box;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: pre-wrap;
+  overflow: hidden;
+  overflow-wrap: break-word;
 }
 
 
 @media only screen and (max-width: 600px) {
   h1 {
-      font-size: 70px;
+      font-size: 60px;
   }
   h2 {
-      font-size: 55px;
+      font-size: 50px;
   }
-  h4 {
-    font-size: 45px;
+
+  div.desc a, p , h4{
+    font-size: 25px;
   }
 .boton , footer{
   font-size: 30px;
 }
-body {
+body , a {
   font-size: 35px
+}
+div.gallery {
+  border: 7px solid #ccc;
+  float: left;
+  flex: wrap;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
 }
 }
 
@@ -148,16 +161,28 @@ body {
       font-size: 65px;
   }
   h2 {
-      font-size: 50px;
+      font-size: 45px;
   }
   h4 {
-    font-size: 40px;
+    font-size: 35px;
   }
-.boton , footer{
-  font-size: 20px;
+  div.desc a, p , h4{
+    font-size: 20px;
+  }
+.boton , footer {
+  font-size: 25px;
 }
-body {
+body , a{
   font-size: 30px
+}
+div.gallery {
+  border: 5px solid #ccc;
+  float: left;
+  flex: wrap;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 25px;
 }
 }
 
@@ -166,16 +191,28 @@ body {
       font-size: 60px;
   }
   h2 {
-      font-size: 45px;
+      font-size: 40px;
   }
   h4 {
-    font-size: 35px;
+    font-size: 30px;
+  }
+  div.desc a, p , h4{
+    font-size: 20px;
   }
 .boton , footer{
-  font-size: 15px;
+  font-size: 20px;
 }
-body {
+body , a {
   font-size: 25px
+}
+div.gallery {
+  border: 7px solid #ccc;
+  float: left;
+  flex: wrap;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
 }
 }
 
@@ -184,24 +221,36 @@ body {
       font-size: 55px;
   }
   h2 {
-      font-size: 40px;
+      font-size: 35px;
   }
   h4 {
-    font-size: 30px;
+    font-size: 25px;
   }
-.boton , footer{
-  font-size: 10px;
+  div.desc a, p , h4{
+    font-size: 20px;
+  }
+.boton , footer {
+  font-size: 15px;
 }
 body {
   font-size: 20px
 }
+div.gallery {
+  border: 10px solid #ccc;
+  float: left;
+  flex: wrap;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+}
 }
 
-img{
+.regiones_img{
   transition: transform .2s;
   }
 
-  img:hover{
+ .regiones_img:hover{
   transform: scale(1.5);
   }
 
