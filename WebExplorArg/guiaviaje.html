@@ -42,15 +42,26 @@
   <input type="email" name="email" id="email"><br>
   <label for="viajero">Tipo de viajero:</label>
   <select id="viajero" name="viajero">
-  <option value="X" selected="selected">...</option>
+  <option value="X" selected="seleccionar">...</option>
   <option value="S">solitario</option>
   <option value="P">en pareja</option>
   <option value="A">con amigos</option>
   <option value="F">con familia</option>
  </select>
  <br>
+ <label for="guias">Actividades o guías, pueden ser:</label>
+  <select id="guias" name="guias">
+  <option value="X" selected="seleccionar">...</option>
+  <option value="C">compartidas</option>
+  <option value="P">privadas</option>
+ </select>
+  <br>
+  <label for="adultos">Número de adultos</label>
+  <input type="number" name="adultos" id="adultos" min="0"><br>
+  <label for="children">Número de niños</label>
+  <input type="number" name="children" id="children" min="0"><br>
   <label for="presupuesto">Presupuesto USD:</label>
-  <input type="number" name="presupuesto" id="presupuesto"><br>
+  <input type="number" name="presupuesto" id="presupuesto" min="1"><br>
   <label for="fecha_ida">Fecha de Ida:<br>
   <input type="date" name="fecha" id="fecha"><br>
   <label for="fecha_vuelta">Fecha de Vuelta:</label><br>
@@ -67,10 +78,10 @@
   <input type="radio" name="region" value="6">Región Cuyo <br>
   <input type="radio" name="region" value="7">Región Patagonia <br>
 </fieldset>
-<fieldset id="actividades">
-  <legend><strong>Actividades de preferencia </strong></legend>
-    <input type="checkbox" name="actividad" value="1">Lugares históricos<br>
-    <input type="checkbox" name="actividad" value="2">Visitas guiadas<br>
+<fieldset id="intereses">
+  <legend><strong>Intereses</strong></legend>
+    <input type="checkbox" name="actividad" value="1">Museos y Lugares históricos<br>
+    <input type="checkbox" name="actividad" value="2">Visitas guiadas a Parques Nacionales<br>
     <input type="checkbox" name="actividad" value="3">Espectáculos <br>
     <input type="checkbox" name="actividad" value="4">Compras<br>
     <input type="checkbox" name="actividad" value="5">Gastronomía <br>
@@ -78,7 +89,7 @@
   </fieldset>
 
 <fieldset id="comentario">
-  <legend><strong>Comentarios</strong></legend>
+  <legend><strong>Comentarios y Pedidos Especiales</strong></legend>
   <textarea id="comentario" name="comentario" rows="5" cols="50"></textarea>
 </fieldset>
 <br>
