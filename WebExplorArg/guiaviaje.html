@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style2.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 <script src="script.js"></script>
 
 </head>
@@ -12,25 +13,79 @@
 <nav class="topnav">
   <button class="boton">  <a href="index.html" class="boton"> <i class="material-icons">home</i> Inicio</a></button>
   <button class="boton">  <a href="guiaviaje.html" class="boton"><i class="material-icons">card_travel</i>Solicita tu guia de viaje</a></button>
-  <button class="boton">  <a href="###" class="boton"><i class="material-icons">contact_support</i>Contacto</a></button>
+  <button class="boton">  <a href="mailto:contacto@ExplorArg.com?Subject=Hola ExplorArg" target="_top" class="boton"><i class="material-icons">contact_support</i>Contacto</a></button>
 </nav>
 
 <!-- titulos de la pagina -->
 
 <title>Guia Viaje</title>
 <header>
-<h1 id="titulo">Solicita tu Guia de Viaje</h1>
+<h1 id="titulo" class="animated_animated animate__flipOutX">Solicita tu Guia de Viaje</h1>
 </header>
 </div>
-<!-- Mensaje de bienvenida -->
+<img class="sticker" src="iconos/travel-guide.png">
 </div>
 <body>
+<!-- Formulario para completar-->
+<br>
+<form id="guiadeviaje" name="guiadeviaje" action="/guia-de-viaje" method="post">
+  <fieldset id="datos_personales">
 
-<h2>Regiones</h2>
+<legend><strong> Datos personales </strong></legend>
+  <label for="nombre">Nombres:</label>
+  <input type="text" name="nombre" id="nombre"><br>
+  <label for="apellidos">Apellidos:</label>
+  <input type="text" name="apellidos" id="apellidos"><br>
+  <label for="celular">Whatsapp:</label>
+  <input type="tel" name="celular" id="celular" maxlength="13"><br>
+  <label for="email">E-mail:</label>
+  <input type="email" name="email" id="email"><br>
+  <label for="viajero">Tipo de viajero:</label>
+  <select id="viajero" name="viajero">
+  <option value="X" selected="selected">...</option>
+  <option value="S">solitario</option>
+  <option value="P">en pareja</option>
+  <option value="A">con amigos</option>
+  <option value="F">con familia</option>
+ </select>
+ <br>
+  <label for="presupuesto">Presupuesto USD:</label>
+  <input type="number" name="presupuesto" id="presupuesto"><br>
+  <label for="fecha_ida">Fecha de Ida:<br>
+  <input type="date" name="fecha" id="fecha"><br>
+  <label for="fecha_vuelta">Fecha de Vuelta:</label><br>
+  <input type="date" name="fecha" id="fecha"><br>
+  </select>
+</fieldset>
+<fieldset id="region_visita">
+<legend> <strong>Me gustaria visitar </strong></legend>
+  <input type="radio" name="region" value="1">Región Noroeste Argentino (NOA) <br>
+  <input type="radio" name="region" value="2" checked="checked">Región Nordeste Argentino (NEA) <br>
+  <input type="radio" name="region" value="3">Región AMBA <br>
+  <input type="radio" name="region" value="4">Región Pampeana <br>
+  <input type="radio" name="region" value="5">Región Centro <br>
+  <input type="radio" name="region" value="6">Región Cuyo <br>
+  <input type="radio" name="region" value="7">Región Patagonia <br>
+</fieldset>
+<fieldset id="actividades">
+  <legend><strong>Actividades de preferencia </strong></legend>
+    <input type="checkbox" name="actividad" value="1">Lugares históricos<br>
+    <input type="checkbox" name="actividad" value="2">Visitas guiadas<br>
+    <input type="checkbox" name="actividad" value="3">Espectáculos <br>
+    <input type="checkbox" name="actividad" value="4">Compras<br>
+    <input type="checkbox" name="actividad" value="5">Gastronomía <br>
+    <input type="checkbox" name="actividad" value="6">Naturaleza<br>
+  </fieldset>
 
+<fieldset id="comentario">
+  <legend><strong>Comentarios</strong></legend>
+  <textarea id="comentario" name="comentario" rows="5" cols="50"></textarea>
+</fieldset>
+<br>
+<input type="submit" value="Enviar"> <br>
 
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. Ut faucibus pulvinar elementum integer enim neque volutpat. Quam id leo in vitae turpis massa sed elementum tempus. Ullamcorper velit sed ullamcorper morbi. Nibh praesent tristique magna sit amet. A pellentesque sit amet porttitor. Hendrerit gravida rutrum quisque non. Enim ut tellus elementum sagittis vitae et leo duis ut. Maecenas accumsan lacus vel facilisis. Adipiscing elit pellentesque habitant morbi tristique senectus et netus et. Amet tellus cras adipiscing enim eu turpis egestas. Velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum.
-  </p>
+<input type="reset" value="Borrar formulario">    
+</form>
 </div>
 </section>
 
@@ -38,5 +93,9 @@
 
 </body>
 <hr>
-<footer> Femme Coders- Derechos Reservados</footer>
+<footer>Femme Coders- Derechos Reservados <br>
+  <img src="iconos/facebook-circle-logo-24.png" >
+  <img src="iconos/instagram-logo-24.png" >
+  <img src="iconos/tiktok-logo-24.png" >
+  <img src="iconos/trip-advisor-logo-24.png" ></footer>
 </html>

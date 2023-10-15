@@ -31,6 +31,9 @@ div {
     transition: all 0.2s ease-in-out;
   }
 
+  .animate__animated.animate__flipInY {
+    --animate-duration: 2s;
+  }
 body{
   background: linear-gradient(90deg, rgb(86, 192, 185) 0%, rgb(92, 98, 180) 100%);;
   background-size: cover;
@@ -42,7 +45,7 @@ body{
   width: 10%;
   margin-left: 20%;
 }
-#region,h4{
+#region,h4,form{
   font-family: 'Lucida Sans';
 }
 #regiones.label{
@@ -98,7 +101,7 @@ iframe{
 .iframe_container {
   position: relative;
   overflow: hidden;
-  width: 100%;
+  height: 100%;
   padding-top: 56.25%;
 }
 
@@ -264,8 +267,9 @@ footer {
   background: rgb(16, 139, 192);
   color: #FFF;
 }
-#iconos
-{
-  height: 10%;
-  width: 10%;
+.sticker{
+  height: 30%;
+  width: 25%;
+  padding-left: 40%;
+  align-self: left;
 }

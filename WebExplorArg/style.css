@@ -37,13 +37,14 @@ body{
   width:100%;
   padding-top: 10%;
   padding-left: 0%;
+
 }
-#turista{
-  width: 10%;
-  margin-left: 20%;
-}
-#region,h4{
+#region,h4,h5,footer{
   font-family: 'Lucida Sans';
+  text-align: justify;
+}
+.animate__animated.animate__flipInY {
+  --animate-duration: 2s;
 }
 #regiones.label{
     background-clip: border-box;
@@ -77,12 +78,13 @@ h4{
 
 h2 {
   color: #fff;
-  font-family: 'Lucida Sans';
+  font-family: 'Caveat';
   text-align: center;
 }
 #bienvenida{
     text-align: justify;
-    font-family: 'Lucida Handwriting';
+    font-family: 'Lucida Sans';
+    font-style: italic;
     margin-left: 10%;
     margin-right: 10%;
     line-height: 2;
@@ -104,7 +106,7 @@ iframe{
 .iframe_container {
   position: relative;
   overflow: hidden;
-  width: 100%;
+  height: 100%;
   padding-top: 56.25%;
 }
 
