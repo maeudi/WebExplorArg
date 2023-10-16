@@ -33,13 +33,13 @@
   <fieldset id="datos_personales">
 <legend><strong> Datos personales </strong></legend>
   <label for="nombre">Nombres:</label>
-  <input type="text" name="nombre" id="nombre"><br>
+  <input type="text" name="nombre" id="nombre" required><br>
   <label for="apellidos">Apellidos:</label>
-  <input type="text" name="apellidos" id="apellidos"><br>
+  <input type="text" name="apellidos" id="apellidos" required><br>
   <label for="celular">Whatsapp:</label>
   <input type="tel" name="celular" id="celular" maxlength="13"><br>
   <label for="email">E-mail:</label>
-  <input type="email" name="email" id="email" placeholder="email"><br>
+  <input type="email" name="email" id="email" placeholder="email" required><br>
   <label for="viajero">Tipo de viajero:</label>
   <select id="viajero" name="viajero">
   <option value="X" selected="seleccionar">...</option>
@@ -63,12 +63,12 @@
   <label for="presupuesto">Presupuesto USD:</label>
   <input type="number" name="presupuesto" id="presupuesto" min="1"><br>
   <label for="fecha_ida">Fecha de Ida:<br>
-  <input type="date" name="fecha" id="fecha"><br>
+  <input type="date" name="fecha" id="fecha_ida"><br>
   <label for="fecha_vuelta">Fecha de Vuelta:</label><br>
-  <input type="date" name="fecha" id="fecha"><br>
+  <input type="date" name="fecha" id="fecha_vuelta"><br>
   </select>
 </fieldset>
-<fieldset id="region_visita">
+<fieldset required id="region_visita">
 <legend> <strong>Me gustaria visitar </strong></legend>
   <input type="radio" name="region" value="1">Región Noroeste Argentino (NOA) <br>
   <input type="radio" name="region" value="2" checked="checked">Región Nordeste Argentino (NEA) <br>
@@ -90,10 +90,10 @@
 
 <fieldset id="comentario">
   <legend><strong>Comentarios y Pedidos Especiales</strong></legend>
-  <textarea id="comentario" name="comentario" rows="5" cols="50"></textarea>
+  <textarea id="comentario_rellenar" name="comentario" rows="5" cols="50"></textarea>
 </fieldset>
 <br>
-<input type="submit" value="Enviar"><a href="" id="emailA"></a> <br>
+<input type="submit" value="Enviar" onclick="sendMail(); return false"> <br>
 
 <input type="reset" value="Borrar formulario">    
 </form>

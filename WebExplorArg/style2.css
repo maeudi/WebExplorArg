@@ -107,8 +107,8 @@ iframe{
 
 div.gallery img {
   width: 90%;
-  height: 90%;
- padding: 15px;
+  height: 50%;
+ margin: 30px 30px;
   object-fit: cover;
   text-align: center;
 }
@@ -116,14 +116,25 @@ div.gallery img {
   color: #FFF;
   text-align: center;
 }
+
+.subtitulo{
+  font-family: 'Lucida Sans';
+  text-align: center;
+  box-sizing: content-box;
+  justify-content: center;
+  align-content: center;
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: pre-wrap;
+  overflow: hidden;
+  overflow-wrap: break-word;
+}
 div.desc h4, a, p {
   font-family: 'Lucida Sans';
   text-align: center;
   box-sizing: content-box;
   justify-content: center;
   align-content: center;
-  justify-items: center;
-  align-items: center;
   word-wrap: break-word;
   word-break: break-all;
   white-space: pre-wrap;
@@ -140,7 +151,7 @@ div.desc h4, a, p {
       font-size: 50px;
   }
 
-  div.desc a, p , h4{
+  div.desc a, p {
     font-size: 25px;
   }
 .boton , footer{
@@ -169,7 +180,7 @@ div.gallery {
   h4 {
     font-size: 35px;
   }
-  div.desc a, p , h4{
+  div.desc a, p {
     font-size: 20px;
   }
 .boton , footer {
@@ -199,7 +210,7 @@ div.gallery {
   h4 {
     font-size: 30px;
   }
-  div.desc a, p , h4{
+  div.desc a, p {
     font-size: 20px;
   }
 .boton , footer{
@@ -229,7 +240,7 @@ div.gallery {
   h4 {
     font-size: 25px;
   }
-  div.desc a, p , h4{
+  div.desc a, p {
     font-size: 20px;
   }
 .boton , footer {
@@ -254,7 +265,7 @@ div.gallery {
   }
 
  .regiones_img:hover{
-  transform: scale(1.5);
+  transform: scale(1.1);
   }
 
 .clearfix:after {
