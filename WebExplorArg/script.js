@@ -20,7 +20,12 @@ var f2 = fecha_vuelta (Date)
 if(f1 < f2){
   console.log("Fecha Correcta");
 }
+
+if (f1.getTime() == f2.getTime()){
+    console.log("Son la misma fecha");
+}
+
 if(f1 > f2){
   console.log("Fecha Incorrecta");
-  window.MessageEvent("La fecha de vuelta no puede ser menor")
+  window.MessageEvent("La fecha de vuelta no puede ser anterior")
 }
