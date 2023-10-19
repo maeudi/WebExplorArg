@@ -63,9 +63,9 @@
   <label for="presupuesto">Presupuesto USD:</label>
   <input type="number" name="presupuesto" id="presupuesto" min="1"><br>
   <label for="fecha_ida">Fecha de Ida:<br>
-  <input type="date" name="fecha" id="fecha_ida"><br>
+  <input type="date" name="fecha" id="f1"><br>
   <label for="fecha_vuelta">Fecha de Vuelta:</label><br>
-  <input type="date" name="fecha" id="fecha_vuelta"><br>
+  <input type="date" name="fecha" id="f2"><br>
   </select>
 </fieldset>
 <fieldset required id="region_visita">
@@ -93,9 +93,9 @@
   <textarea id="comentario_rellenar" name="comentario" rows="5" cols="50"></textarea>
 </fieldset>
 <br>
-<input type="submit" value="Enviar" onclick="sendMail(); return false"> <br>
+<input type="submit" value="Enviar" id="enviar" onclick="sendMail(); return false"> <br>
 
-<input type="reset" value="Borrar formulario" onclick="reset()">    
+<input type="reset" value="Borrar formulario" id="borrar" onclick="reset()">    
 </form>
 </div>
 </section>

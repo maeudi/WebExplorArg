@@ -49,14 +49,15 @@ En nuestra esencia está la de ser un país de puertas abiertas, que cobijó a m
 <!-- Seleccion de regiones-->
 <nav id="regiones"> 
   <button class="boton" for="Regiones">Viaja con nosotros:
-      <select name="Regiones" id="Region">
-          <option value="NOA">Noroeste argentino (NOA)</option>
-          <option value="NEA">Nordeste argentino (NEA)</option>
+      <select name="Regiones" id="Region" onchange="destino()">
+          <option value="\">...</option>
+          <option value="\RegionNOA.html">Noroeste argentino (NOA)</option>
+          <option value="\RegionNEA.html">Nordeste argentino (NEA)</option>
           <option value="AMBA">Región AMBA </option>
           <option value="PBA">Región Buenos Aires</option>
           <option value="Centro">Región Centro </option>
-          <option value="Cuyo">Región Cuyo</option>
-          <option value="Patagonia">Región Patagonia </option>
+          <option value="\RegionCuyo.html">Región Cuyo</option>
+          <option value="\RegionPatagonia.html">Región Patagonia </option>
       </select>
  </nav> </button>
   <p><h5>Te preparamos guías de viaje a medida, para que disfrutes cada destino de nuestro país : lugares para visitar, comer, hospedaje y mucho más. </h5> 
