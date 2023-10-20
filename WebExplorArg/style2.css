@@ -260,11 +260,11 @@ div.gallery {
 }
 }
 
-.regiones_img{
+.regiones_img , footer img{
   transition: transform .2s;
   }
 
- .regiones_img:hover{
+ .regiones_img:hover , footer img:hover{
   transform: scale(1.1);
   }
 
@@ -277,6 +277,9 @@ div.gallery {
 footer {
   background: rgb(16, 139, 192);
   color: #FFF;
+}
+.footer_icons {
+  text-align: center;
 }
 .sticker{
   height: 30%;

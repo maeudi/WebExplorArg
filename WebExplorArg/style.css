@@ -113,7 +113,7 @@ iframe{
 div.gallery img {
   width: 90%;
   height: 50%;
- margin: 30px 30px;
+ margin: 20px 20px 20px 20px;
   object-fit: cover;
   text-align: center;
 }
@@ -246,11 +246,11 @@ div.gallery {
 }
 }
 
-.regiones_img{
+.regiones_img , footer img{
   transition: transform .2s;
   }
 
- .regiones_img:hover{
+ .regiones_img:hover , footer img:hover{
   transform: scale(1.1);
   }
 
@@ -263,6 +263,9 @@ div.gallery {
 footer {
   background: rgb(16, 139, 192);
   color: #FFF;
+}
+.footer_icons {
+  text-align: center;
 }
 #iconos
 {
