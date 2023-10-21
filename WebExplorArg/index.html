@@ -47,19 +47,18 @@ En nuestra esencia está la de ser un país de puertas abiertas, que cobijó a m
 <hr>
 <h2>Regiones</h2>
 <!-- Seleccion de regiones-->
-<nav id="regiones"> 
-  <button class="boton" for="Regiones">Viaja con nosotros:
-      <select name="Regiones" id="Region" onchange="destino()">
-          <option value="\">...</option>
-          <option value="\RegionNOA.html">Noroeste argentino (NOA)</option>
-          <option value="\RegionNEA.html">Nordeste argentino (NEA)</option>
-          <option value="AMBA">Región AMBA </option>
-          <option value="PBA">Región Buenos Aires</option>
-          <option value="Centro">Región Centro </option>
-          <option value="\RegionCuyo.html">Región Cuyo</option>
-          <option value="\RegionPatagonia.html">Región Patagonia </option>
-      </select>
- </nav> </button>
+<div id="dropdown"> 
+  <button onclick="myFunction()" class="dropbtn" for="Regiones">Viaja con nosotros </button>
+      <div id="myDropdown" class="dropdown-content">
+          <a href="\">...</a>
+          <a href="RegionNOA.html">Noroeste argentino (NOA)</a>
+          <a href="RegionNEA.html">Nordeste argentino (NEA)</a>
+          <a href="AMBA">Región AMBA </a>
+          <a href="PBA">Región Pampeana</a>
+          <a href="RegionCuyo.html">Región Cuyo</a>
+          <a href="RegionPatagonia.html">Región Patagonia </a>
+    </div>
+</div>
   <p><h5>Te preparamos guías de viaje a medida, para que disfrutes cada destino de nuestro país : lugares para visitar, comer, hospedaje y mucho más. </h5> 
   </p>
 
@@ -108,13 +107,13 @@ En nuestra esencia está la de ser un país de puertas abiertas, que cobijó a m
 <div class="clearfix"></div>
 <div style="padding:10px;">
 
-  
+<!-- INCLUIR VIDEOS, MUSICA -->
 </div>
 <hr>
 <div class="iframe_container">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/tU9rjTRcAao?si=gVztq6SZNNFFyi3T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
-<!-- INCLUIR VIDEOS, MUSICA -->
+
 <hr>
 <footer> Femme Coders- Derechos Reservados <br>
    <div class="footer_icons">

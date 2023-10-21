@@ -24,20 +24,19 @@
 <h1 id="titulo" class="animated_animated animate__flipOutX"> Región Nordeste Argentino (NEA) </h1>
  </header>
 <div>
-<!-- Mensaje de bienvenida -->
-<nav id="regiones"> 
-  <button class="boton" for="Regiones">Viaja con nosotros:
-      <select name="Regiones" id="Region">
-          <option value="\">...</option>
-          <option value="NOA">Noroeste argentino (NOA)<a href="RegionNOA.html"></a></option>
-          <option value="NEA">Nordeste argentino (NEA)</option>
-          <option value="AMBA">Región AMBA </option>
-          <option value="PBA">Región Buenos Aires</option>
-          <option value="Centro">Región Centro </option>
-          <option value="Cuyo">Región Cuyo</option>
-          <option value="Patagonia">Región Patagonia </option>
-      </select>
-  </button></nav>
+<!-- Seleccionar las regiones -->
+<div id="dropdown"> 
+  <button onclick="myFunction()" class="dropbtn" for="Regiones">Viaja con nosotros </button>
+      <div id="myDropdown" class="dropdown-content">
+          <a href="\">...</a>
+          <a href="RegionNOA.html">Noroeste argentino (NOA)</a>
+          <a href="RegionNEA.html">Nordeste argentino (NEA)</a>
+          <a href="AMBA">Región AMBA </a>
+          <a href="PBA">Región Pampeana</a>
+          <a href="RegionCuyo.html">Región Cuyo</a>
+          <a href="RegionPatagonia.html">Región Patagonia </a>
+    </div>
+</div>
   <hr>
  <div class="iframe_container"> 
   <iframe width="560" height="315" src="https://www.youtube.com/embed/n475nPpErpk?si=cpqmW5mW6cdsjTXB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
