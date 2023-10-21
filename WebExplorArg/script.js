@@ -33,7 +33,7 @@ if (f1 == f2){
 
 if(f1 > f2){
   console.log("Fecha Incorrecta");
-  window.MessageEvent("La fecha de vuelta no puede ser anterior")
+  alert("La fecha de vuelta no puede ser anterior")
 }
 //Lista "Viaja con nosotros"
 //Abrir la lista
